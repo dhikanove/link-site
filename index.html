@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLN Mobile Links</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #db6a99, #9c528b);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      max-width: 520px;
+      width: 100%;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .logo {
+      width: 90px;
+      height: auto;
+      margin: 0 auto 1.5rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #db6a99, #c94f7c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .city-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 1rem;
+      background: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      color: #db6a99;
+      box-shadow: 
+        0 4px 6px rgba(0,0,0,0.1),
+        0 8px 16px rgba(0,0,0,0.08),
+        inset 0 1px 2px rgba(255,255,255,0.6);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .city-card img {
+      width: 65px;
+      height: 65px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+      background-color: #ecdfc4;
+      border-radius: 100%;
+    }
+
+    .city-card span {
+      background: linear-gradient(135deg, #db6a99, #c94f7c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1rem;
+    
+
+    .city-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 
+        0 6px 12px rgba(0,0,0,0.15),
+        0 12px 24px rgba(0,0,0,0.12),
+        inset 0 1px 3px rgba(255,255,255,0.7);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./kukshb.png" alt="PLN Mobile" class="logo" />
+
+    <div class="links">
+      <a href="#" class="city-card">
+        <img src="./monas.png" alt="Jakarta" />
+        <span>Jakarta</span>
+      </a>
+      <a href="#" class="city-card">
+        <img src="./mandala.png" alt="Makassar" />
+        <span>Makassar</span>
+      </a>
+      <a href="#" class="city-card">
+        <img src="./ampera.png" alt="Palembang" />
+        <span>Palembang</span>
+      </a>
+    </div>
+    <footer style="padding-top: 1rem; padding-bottom: 0rem;">© 2025 PLN Mobile</footer>
+  </div>
+</body>
+</html>
