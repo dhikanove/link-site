@@ -91,7 +91,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 1rem;
-    
+    }
 
     .city-card:hover {
       transform: translateY(-6px);
@@ -113,20 +113,37 @@
     <img src="./kukshb.png" alt="PLN Mobile" class="logo" />
 
     <div class="links">
-      <a href="#" class="city-card">
+      <a href="#" class="city-card" onclick="goTo('Jakarta')">
         <img src="./monas.png" alt="Jakarta" />
         <span>Jakarta</span>
       </a>
-      <a href="#" class="city-card">
+      <a href="#" class="city-card" onclick="goTo('Makassar')">
         <img src="./mandala.png" alt="Makassar" />
         <span>Makassar</span>
       </a>
-      <a href="#" class="city-card">
+      <a href="#" class="city-card" onclick="goTo('Palembang')">
         <img src="./ampera.png" alt="Palembang" />
         <span>Palembang</span>
       </a>
     </div>
     <footer style="padding-top: 1rem; padding-bottom: 0rem;">© 2025 PLN Mobile</footer>
   </div>
+
+    <!-- Script di akhir body -->
+  <script>
+    function goTo(city) {
+      const encodedUrlJakarta = 'cGxubW9iaWxlOi8vZXZlbnQ/dG9rZW49dHJ1ZSZ0aWNrZXRJZD0yNyZhcHBfYmFyPXRydWUmdXJsPWh0dHBzJTNBJTJGJTJGdGlja2V0aW5nLWV2ZW50LXBsbm1vYmlsZS5iZXlvbmRrd2guaWQlMkZ0aWNrZXQtcGljayUzRmV2ZW50SWQlM0QyJTI2dGlja2V0SWQlM0QyNyUyNnNhbGVzUGVyaW9kJTNENg=='
+      if(city==='Jakarta'){
+         const url = atob(encodedUrlJakarta); // decode base64 → URL asli
+         window.location.href = url;
+      } else if(city==='Makassar'){
+        const url = atob(encodedUrlJakarta); // decode base64 → URL asli
+        window.location.href = url;
+      } else if (city==='Palembang'){
+        const url = atob(encodedUrlJakarta); // decode base64 → URL asli
+        window.location.href = url;
+      }
+    }
+  </script>
 </body>
 </html>
